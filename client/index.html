@@ -62,14 +62,12 @@
     <script src="app/index.js"></script>
     <script src="app/domain/negociacao/Negociacao.js"></script>
     <script>
-      var n1 = new Negociacao(new Date(), 5, 700);
-      Object.freeze(n1);
-      n1._quantidade = 100000000000;
-      console.log(n1._quantidade);
-      console.log(n1.quantidade);
+      var hoje = new Date();
+      var n1 = new Negociacao(hoje, 5, 700);
       console.log(n1.data);
-      console.log(n1.valor);
-      console.log(n1.volume);
+      // altera a data que foi armazenada em Negociacao também
+      hoje.setDate(11);
+      console.log(n1.data);
     </script>
 </body>
 </html>
