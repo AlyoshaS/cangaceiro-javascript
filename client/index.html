@@ -62,12 +62,11 @@
     <script src="app/index.js"></script>
     <script src="app/domain/negociacao/Negociacao.js"></script>
     <script>
-      var hoje = new Date();
-      var n1 = new Negociacao(hoje, 5, 700);
-      console.log(n1.data);
-      // altera a data que foi armazenada em Negociacao também
+      let hoje = new Date();
+      let n1 = new Negociacao( hoje, 5, 700 );
+      console.log( n1.data );
       hoje.setDate(11);
-      console.log(n1.data);
+      console.log( n1.data );
     </script>
 </body>
 </html>
